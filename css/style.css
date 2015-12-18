@@ -12,25 +12,223 @@
   color: red !important;
 }
 
-body {
-  min-width: 900px;
+.container, .container-md {
+  margin: 0 auto;
+}
+
+/*for width less than 600px*/
+@media screen and (max-width: 600px) {
+    header {
+    min-height: 750px !important;
+  }
+
+  #social-title, #food-title {
+    padding: 5px;
+    font-size: 2.7em;
+  }
+  .social-link {
+    width: 100%;
+  }
+
+  #ingredients-info {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 250px 0 0 0 !important;
+  }
+
+  #food {
+    height: 1050px !important;
+  }
+
+  #social-content {
+    width: 100% !important;
+  }
+
+  #subtitle {
+    width: 80% !important;
+    line-height: 30px !important;
+  }
+
+  .goto-btn {
+    padding: 20px 0 0 2px;
+    margin-top: 60px;
+    width: 77px;
+    height: 60px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container-md {
+    width: 100%;
+  }
+
+  .nav-link {
+    display: none;
+    padding-top: 15px;
+    margin: 0 20px;
+  }
+
+  #map-link {
+    display: none !important;
+  }
+
+
+  #address {
+    text-align: center;
+    padding: 20px 50px;
+    font-size: 1.5em;
+    color: #7F8C8D;
+  }
+
+  #main-title {
+    text-align: center;
+  }
+
+  #main-title a {
+    color: #FFF;
+    font-weight: 800;
+    font-size: 2em;
+  }
+
+}
+/*width: end*/
+
+
+@media screen and (min-width: 900px) {
+  header {
+    min-height: 580px !important;
+  }
+
+  #social-title, #food-wrapper {
+    padding: 300px 0;
+  }
+
+  #social-title, #food-title {
+    width: 800px;
+    padding: 20px 10px;
+    font-size: 3em;
+  }
+
+  .social-link {
+    width: 50%;
+  }
+
+  .goto-btn {
+    margin-top: 120px;
+    padding: 15px 0 0 0;
+    width: 75px;
+    height: 60px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 900px;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .container-md {
+    width: 800px;
+  }
+
+  #address {
+    text-align: left;
+    padding: 120px 50px;
+    font-size: 1.2em;
+    color: #7F8C8D;
+  }
+
+  .nav-link {
+    padding-top: 15px;
+    margin: 0 20px;
+  }
+
+
+  #main-title a {
+    color: #FFF;
+    font-weight: 800;
+    font-size: 0.8em;
+  }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  header {
+    min-height: 650px !important;
+  }
+
+  #social-title, #food-title {
+    width: 500px;
+    padding: 5px;
+    font-size: 2.7em;
+  }
+  .social-link {
+    width: 100%;
+  }
+
+
+  .goto-btn {
+    padding: 20px 0 0 2px;
+    margin-top: 60px;
+    width: 77px;
+    height: 60px;
+  }
+
+  body {
+    font-size: 13px;
+  }
+
+  .container {
+    width: 600px;
+  }
+
+  .container-md {
+    width: 600px;
+  }
+
+  .nav-link {
+    display: none;
+    padding-top: 15px;
+    margin: 0 20px;
+  }
+
+
+  #address {
+    text-align: center;
+    padding: 20px 50px;
+    font-size: 1.5em;
+    color: #7F8C8D;
+  }
+
+  #main-title {
+    text-align: center;
+  }
+
+  #main-title a {
+    color: #FFF;
+    font-weight: 800;
+    font-size: 2em;
+  }
+
 }
 
 .text-center {
   text-align: center;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.container {
-  width: 900px;
-  margin: 0 auto;
 }
 
 a {text-decoration: none; color: #000;}
@@ -44,23 +242,11 @@ a:active {text-decoration: none; color: #000;}
 header {
   position: relative;
   background: url("/img/fast-food.jpg") 50% -100px no-repeat;
-  min-height: 500px;
-  padding: 120px 0;
-}
-
-#main-title a {
-  color: #FFF;
-  font-weight: 800;
-  font-size: 0.8em;
+  padding: 80px 0 0 0;
 }
 
 #nav-links {
   list-style: none;
-}
-
-.nav-link {
-  padding-top: 15px;
-  margin: 0 20px;
 }
 
 .nav-link a {
@@ -73,7 +259,7 @@ header {
 }
 
 #title {
-  margin-top: 100px;
+  margin-top: 60px;
   font-size: 2.6em;
   color: #FFF;
 }
@@ -115,17 +301,6 @@ header {
   padding: 0 50px;
 }
 
-.container-md {
-  width: 800px;
-  margin: 0 auto;
-}
-
-#address {
-  text-align: left;
-  padding: 120px 50px;
-  font-size: 1.2em;
-  color: #7F8C8D;
-}
 /*section: end*/
 
 /*section: food*/
@@ -137,20 +312,13 @@ header {
   height: 1500px;
 }
 
-#social-title, #food-wrapper {
-  padding: 300px 0;
-}
-
 #social-wrapper {
   margin-bottom: 100px;
 }
 
 #social-title, #food-title {
-  width: 800px;
-  padding: 20px 10px;
   margin: 0 auto;
   color: #FFF;
-  font-size: 3em;
   border: 10px solid #FFF;
 }
 #food-title {
@@ -193,7 +361,6 @@ header {
 
 .social-link {
   text-align: center;
-  width: 50%;
 }
 
 #yell, #yelp {
@@ -245,10 +412,6 @@ footer {
 
 /*goto-btn*/
 .goto-btn {
-  margin-top: 120px;
-  padding: 15px 0 0 0;
-  width: 75px;
-  height: 60px;
   text-align: center;
   border-radius: 100%;
   margin: 0 auto;
@@ -265,3 +428,7 @@ footer {
   background: rgba(0, 0, 0, 0.8);
 }
 /*goto-btn: end*/
+
+#food-wrapper {
+  padding: 300px 0;
+}

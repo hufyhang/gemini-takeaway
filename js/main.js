@@ -1,12 +1,17 @@
 'use strict';
 (function (window, document, $) {
+  var $window = $(window);
   // Change header height on the fly.
-  var header = document.getElementById('header');
-  header.style.height = window.innerHeight + 'px';
+  var $header = $('header');
+  $header.css('height', $window.innerHeight() - 80 + 'px');
 
-  window.onresize = function () {
-    header.style.height = window.innerHeight + 'px';
-  };
+  $window.on('resize', function () {
+    $header.css('height', $window.innerHeight() - 80 + 'px');
+  });
+
+  // window.onresize = function () {
+  //   header.style.height = window.innerHeight + 'px';
+  // };
 
   // Set target=_blank for each external anchor.
   var anchors = document.getElementsByTagName('a');
