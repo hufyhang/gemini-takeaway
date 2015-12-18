@@ -49,13 +49,17 @@ header {
 }
 
 .nav-link {
-  padding-top: 10px;
+  padding-top: 15px;
   margin: 0 20px;
 }
 
 .nav-link a {
   color: #FFF;
   font-size: 1.3em;
+}
+
+.nav-link a:hover {
+  text-decoration: underline;
 }
 
 #title {
@@ -121,11 +125,11 @@ header {
   height: 1500px;
 }
 
-#food-wrapper {
+#social-title, #food-wrapper {
   padding: 300px 0;
 }
 
-#food-title {
+#social-title, #food-title {
   width: 800px;
   padding: 20px 10px;
   margin: 0 auto;
@@ -142,9 +146,50 @@ header {
 }
 /*section: end*/
 
-/*section: menu*/
-#menu {
-  background: url("/img/pizza.jpg") 50% 0 no-repeat;
-  height: 600px;
+/*section: social*/
+#social {
 }
+
+#social-bg {
+  padding: 300px 0 0 0;
+  background: url("/img/pizza.jpg") 50% 0 no-repeat;
+  height: 400px;
+
+}
+
+#social-content {
+  padding: 100px 0 100px 0;
+  color: #7F8C8D;
+  font-size: 1.7em;
+  width: 550px;
+  margin: 0 auto;
+}
+
+#social-links {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.social-link {
+  text-align: center;
+  width: 50%;
+}
+
+#yell, #yelp {
+  display: block;
+  text-indent: 120%;
+  overflow: hidden;
+  height: 150px;
+  margin-bottom: 50px;
+}
+
+#yell {
+  background: url("https://www.yell.com/img/R08_Yell_Logo_177_59.svg") 50% no-repeat;
+}
+
+#yelp {
+  background: url("/img/yelp.png") 50% no-repeat;
+}
+
 /*section: end*/
