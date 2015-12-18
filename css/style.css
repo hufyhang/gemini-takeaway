@@ -130,7 +130,9 @@ header {
 
 /*section: food*/
 #food {
-  background: url("/img/ingredients.jpg") 50% 0 no-repeat;
+  background-image: url("/img/ingredients.jpg"), url("/img/table.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat, repeat-x;
   margin-top: 80px;
   height: 1500px;
 }
@@ -203,7 +205,7 @@ header {
 }
 
 #yell {
-  background: url("https://www.yell.com/img/R08_Yell_Logo_177_59.svg") 50% no-repeat;
+  background: url("/img/yell.svg") 50% no-repeat;
 }
 
 #yelp {
