@@ -193,3 +193,32 @@ header {
 }
 
 /*section: end*/
+
+/*footer*/
+footer {
+  background: #1B1F23;
+  height: 150px;
+  line-height: 150px;
+  overflow: hidden;
+}
+
+.inline {
+  display: inline-block;
+  *display: inline;
+}
+
+#footer-title, #author {
+  margin: 0 20px 0 0;
+  color: #7F8C8D;
+  font-weight: 200;
+  font-size: 0.9em;
+}
+
+#footer-title a {
+  color: #FFF;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+
+/*footer: end*/
