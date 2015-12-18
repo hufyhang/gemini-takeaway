@@ -1,5 +1,5 @@
 'use strict';
-(function (window, document) {
+(function (window, document, $) {
   // Change header height on the fly.
   var header = document.getElementById('header');
   header.style.height = window.innerHeight + 'px';
@@ -16,4 +16,15 @@
       anchor.setAttribute('target', '_blank');
     }
   });
-})(window, document);
+
+  // Register goto-btn events.
+  var btns = $('.goto-btn');
+  btns.each(function () {
+    var target = $(this).attr('data-target');
+    target = $('#' + target);
+    $(this).on('click', function () {
+      $.scrollTo(target, 500);
+    });
+  });
+
+})(window, document, jQuery);

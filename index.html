@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,14 +14,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <![endif]-->
 
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!--[if lt IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to ensure your experience.</p>
         <![endif]-->
 
         <header id="header">
@@ -40,6 +40,11 @@
                 <span id="subtitle">
                     Everything we know about world cuisines in one place in Manchester
                 </span>
+            </div>
+            <div class="goto-btn" data-target="location">
+                <a href="javascript:;">
+                    <i class="fa fa-angle-down fa-3x"></i>
+                </a>
             </div>
         </header>
 
@@ -65,6 +70,11 @@
         <section id="food">
            <div id="food-wrapper" class="container text-center">
                <h2 id="food-title">Our ingredients for your food</h2>
+               <div class="goto-btn" data-target="ingredients-info">
+                   <a href="javascript:;">
+                       <i class="fa fa-angle-down fa-3x"></i>
+                   </a>
+               </div>
                <p id="ingredients-info">
                    In Gemini Takeaway, we only use the <strong>freshest</strong> and <strong>finest</strong> ingredients to ensure the outstanding quality of our food.
                </p>
@@ -77,9 +87,16 @@
                 <div id="social-wrapper" class="container text-center">
                     <h2 id="social-title">What others say about us</h2>
                 </div>
+
+                <div class="goto-btn" data-target="social-content">
+                   <a href="javascript:;">
+                       <i class="fa fa-angle-down fa-3x"></i>
+                   </a>
+               </div>
             </div>
             <div id="social-content" class="text-center">
                 <span id="social-info">We are spoken high on social networks. Check out what people say about us.</span>
+
                 <ul id="social-links" class="clearfix">
                     <li class="social-link left"><a id="yelp" href="http://www.yelp.com/biz/gemini-takeaway-manchester" rel="external">Yelp</a></li>
                     <li class="social-link left"><a id="yell" href="https://www.yell.com/biz/gemini-takeaway-manchester-2288382/" rel="external">Yell</a></li>
@@ -96,6 +113,8 @@
             </div>
         </footer>
 
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/jquery.scrollTo.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

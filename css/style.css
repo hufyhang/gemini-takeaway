@@ -2,6 +2,16 @@
   font-family: "Helvetica Neue", arial, sans-serif;
 }
 
+.browserupgrade {
+  font-size: 2em;
+  color: red;
+}
+
+.browserupgrade a {
+  text-decoration: underline !important;
+  color: red !important;
+}
+
 body {
   min-width: 900px;
 }
@@ -34,7 +44,7 @@ a:active {text-decoration: none; color: #000;}
 header {
   position: relative;
   background: url("/img/fast-food.jpg") 50% -100px no-repeat;
-  min-height: 400px;
+  min-height: 500px;
   padding: 120px 0;
 }
 
@@ -129,6 +139,10 @@ header {
   padding: 300px 0;
 }
 
+#social-wrapper {
+  margin-bottom: 100px;
+}
+
 #social-title, #food-title {
   width: 800px;
   padding: 20px 10px;
@@ -137,12 +151,16 @@ header {
   font-size: 3em;
   border: 10px solid #FFF;
 }
+#food-title {
+  margin-bottom: 100px;
+}
 
 #ingredients-info {
-  margin: 650px auto 0 auto;
+  padding: 250px 0 0 0;
   color: #7F8C8D;
   font-size: 1.7em;
   width: 550px;
+  margin: 250px auto 0 auto;
 }
 /*section: end*/
 
@@ -222,3 +240,26 @@ footer {
 
 
 /*footer: end*/
+
+/*goto-btn*/
+.goto-btn {
+  margin-top: 120px;
+  padding: 15px 0 0 0;
+  width: 75px;
+  height: 60px;
+  text-align: center;
+  border-radius: 100%;
+  margin: 0 auto;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.goto-btn a {
+  color: #FFF;
+}
+
+.goto-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+/*goto-btn: end*/
