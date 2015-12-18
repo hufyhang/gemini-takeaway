@@ -23,8 +23,10 @@
     var target = $(this).attr('data-target');
     target = $('#' + target);
     $(this).on('click', function () {
-      $.scrollTo(target, 500);
+      $.scrollTo(target, 400);
     });
   });
+
+  new WOW().init();
 
 })(window, document, jQuery);
