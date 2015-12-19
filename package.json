@@ -1,0 +1,20 @@
+{
+  "name": "gemini",
+  "version": "0.0.0",
+  "description": "Gemini Takeaway",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hufyhang/gemini-takeaway.git"
+  },
+  "author": "Feifei Hang <l.daniel.hung@gmail.com> (http://feifeihang.github.io/)",
+  "homepage": "https://github.com/hufyhang/gemini-takeaway",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-imagemin": "^2.4.0",
+    "imagemin-pngquant": "^4.2.0",
+    "gulp-htmlmin": "^1.3.0"
+  }
+}
