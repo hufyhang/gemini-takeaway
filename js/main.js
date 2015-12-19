@@ -34,4 +34,8 @@
 
   new WOW().init();
 
+  // Parallax Scrolling
+  $('#header').parallax('50%', 0.6);
+  $('#social-bg').parallax('50%', 0.6);
+
 })(window, document, jQuery);
